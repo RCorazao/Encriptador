@@ -1,0 +1,181 @@
+
+html, body{
+    height: 100%;
+    margin: 0;
+    background: linear-gradient(to bottom right, rgba(255,255,255,0.0), rgba(255, 255, 255, 0.9)),
+    url('img/fondo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.logo{
+    padding-top: 20px;
+    margin-left: 10px;
+}
+
+/* Estilos para el contenedor principal */
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 85%;
+    padding-left: 10%;
+}
+
+/* Estilos para las secciones */
+section {
+    width: 40%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+}
+
+section:first-child{
+    margin-right: 10%;
+}
+section:last-child{
+    margin-left: 10%;
+    opacity: 0.5;
+}
+
+/* Estilos para los textareas */
+textarea {
+    resize: none;
+    height: 100%;
+    width: 100%;
+    margin-bottom: 20px;
+    display: block;
+    border: none;
+    border-radius: 20px;
+
+}
+
+textarea:focus{
+    outline: none;
+}
+
+#textarea-1{
+    height: 60%;
+    padding: 5%;
+    background: transparent;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+}
+textarea::placeholder{
+    color: white;
+}
+
+#textarea-2{
+    background-image: url('img/img1.png');
+    background-size: cover;
+    background-size: 60%;
+    background-position: center 30%;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-color: white;
+    padding: 10%;
+    font-size: 15px;
+    opacity: 0.8;
+}
+
+/* Estilos para los botones */
+button {
+    color: #261b2b;
+    /* Eliminar color de fondo */
+    background: transparent;
+    /* Grosor del borde, estilo de línea y color */   
+    border: 2px solid #261b2b;
+    /* Añadir esquinas curvadas */  
+    border-radius: 15px;
+    border: none;
+    color: white;
+    padding: 13px 25px;
+    text-align: center;
+    display: inline-block;
+    font-size: 1em;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    text-decoration: none;
+    width: 40%;
+    justify-content: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    background-color: #261b2b;
+}
+
+button:hover {
+    background-color: white;
+    color: #261b2b;
+}
+
+.left-buttons {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    bottom: 10%;
+}
+
+.right-buttons{
+    margin-top: 10px;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    bottom: 10%;
+    background-color: none;
+}
+
+/* Mensajes */
+.information{
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: white;
+    bottom: 20%;
+    overflow: hidden;
+    background: none;
+}
+strong{
+    background: none;
+    text-align: center;
+}
+p{
+    background: none;
+    text-align: center;
+    overflow: hidden;
+}
+
+.warning{
+    color: white;
+    font-size: 20px;
+    text-align: left;
+    position: absolute;
+    bottom: 15%;
+    width: 100%;
+}
+
+.admiration{
+    display:inline-block; 
+    width:1.5em; height:1.5em; 
+    border-radius:50%; 
+    text-align:center; 
+    font-weight:bold; 
+    background-color:rgb(69, 69, 69); 
+    color:#fff; 
+    line-height:1.5em;
+}
